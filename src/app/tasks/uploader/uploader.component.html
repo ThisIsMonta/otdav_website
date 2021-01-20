@@ -1,0 +1,4 @@
+<div *ngIf="percentage | async as percent">
+    <progress [value]="percent" max="100"></progress>
+    {{percent | number}}
+</div>

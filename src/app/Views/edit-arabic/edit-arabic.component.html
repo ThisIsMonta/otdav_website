@@ -1,0 +1,38 @@
+<form [formGroup]="arabicFormEdit" (ngSubmit)="updateView()" id="body" class="container-fluid p-2">
+    <div class="col-md-12">
+        <h1 class="font-weight-bold text-danger">Images</h1>
+    </div>
+    <div class="row">
+        <div *ngFor="let img of images" class="col-md-4">
+            <img class="w-100" src="{{img}}">
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="font-weight-bold text-danger float-right">مجلتنا</h1>
+            </div>
+            <div class="col-md-12 mt-2">
+                <textarea dir="rtl" class="w-100" formControlName="notre_magazine"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" #about>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="font-weight-bold text-danger float-right">في ما يخصنا
+                </h1>
+            </div>
+            <div class="col-md-12 mt-2">
+                <textarea dir="rtl" class="w-100" formControlName="a_propos"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" #about>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button type="submit" class="p-2 px-3 btn btn-success">Modifier</button>
+            </div>
+        </div>
+    </div>
+</form>

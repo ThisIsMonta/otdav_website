@@ -1,0 +1,8 @@
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("https://www.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png");
+  }
+
+  td.btn:hover {
+    transition: 250ms;
+    background-color: #fff;
+  }

@@ -1,0 +1,23 @@
+<div class="modal fade" id="deletePdf" tabindex="-1" role="dialog" aria-labelledby="deletePdfTitle" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>Voulez-vous supprimer {{pdf.title}} ?</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-4 text-center">
+                            <button class="btn btn-danger" data-dismiss="modal" aria-label="Close">Non</button>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <button class="btn btn-danger" data-dismiss="modal" aria-label="Close" (click)="dService.deletePDF(lang,pdf.title,pdf.link,pdf.cover_image)">Oui</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
